@@ -473,16 +473,16 @@ footer a{color:var(--sky);text-decoration:none}
     <form action="https://formspree.io/f/xgorapyv" method="POST">
     <h3>Solicitar cita previa</h3>
     <div class="form-row">
-      <div class="form-group"><label>Nombre</label><input type="text" placeholder="Tu nombre"></div>
-      <div class="form-group"><label>Apellidos</label><input type="text" placeholder="Tus apellidos"></div>
+      <div class="form-group"><label>Nombre</label><input type="text" name="nombre" placeholder="Tu nombre"></div>
+      <div class="form-group"><label>Apellidos</label><input type="text" name="apellidos" placeholder="Tus apellidos"></div>
     </div>
     <div class="form-row">
-      <div class="form-group"><label>Teléfono</label><input type="tel" placeholder="6XX XXX XXX"></div>
-      <div class="form-group"><label>Email</label><input type="email" placeholder="tu@email.com"></div>
+<div class="form-group"><label>Teléfono</label><input type="tel" name="telefono" placeholder="6XX XXX XXX"></div>
+      <div class="form-group"><label>Email</label><input type="email" name="email" placeholder="tu@email.com"></div>
     </div>
     <div class="form-group">
       <label>Tratamiento de interés</label>
-      <select>
+      <select name="tratamiento">
         <option value="">Selecciona una opción</option>
         <option>Revisión general</option><option>Limpieza dental</option>
         <option>Odontopediatría / PADI</option><option>Blanqueamiento</option>
@@ -490,11 +490,11 @@ footer a{color:var(--sky);text-decoration:none}
         <option>Periodoncia</option><option>Ortodoncia / Invisalign</option><option>Endodoncia</option><option>Otro</option>
       </select>
     </div>
-    <div class="form-group"><label>Mensaje (opcional)</label><textarea placeholder="Cuéntanos algo más sobre tu consulta..."></textarea></div>
-    <button class="form-submit" onclick="alert('Gracias. Nos pondremos en contacto pronto.\nTambién puede llamarnos al 971 751 754.')">Solicitar cita previa →</button>
-  </div>
+   <div class="form-group"><label>Mensaje (opcional)</label><textarea name="mensaje" placeholder="Cuéntanos algo más sobre tu consulta..."></textarea></div>
+<button type="submit" class="form-submit">Solicitar cita previa →</button>
+ </form>
+</div>
 </section>
-
 <div class="map-strip">
   <iframe src="https://maps.google.com/maps?q=Calle+General+Riera+6,+07003+Palma+de+Mallorca&output=embed&z=15" allowfullscreen loading="lazy" title="Ubicación Dental Quetglas SLP"></iframe>
   <div class="map-overlay">
